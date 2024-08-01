@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Corrida de Cavalos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jogo de Corrida de Cavalos</h1>
+    <div id="message"></div>
+    <div class="track">
+        <div id="horse1" class="horse">🏇</div>
+        <div id="horse2" class="horse">🏇</div>
+        <div id="horse3" class="horse">🏇</div>
+        <div id="horse4" class="horse">🏇</div>
+    </div>
+    <div>
+        <h1>Escolha seu cavalo:</h1>
+        <button class="bet-button" id="bet1" onclick="selectHorse(1)" style="background-color: red;">Cavalo 1</button>
+        <button class="bet-button" id="bet2" onclick="selectHorse(2)" style="background-color: green;">Cavalo 2</button>
+        <button class="bet-button" id="bet3" onclick="selectHorse(3)" style="background-color: rgb(0, 170, 255);">Cavalo 3</button>
+        <button class="bet-button" id="bet4" onclick="selectHorse(4)" style="background-color: yellow;">Cavalo 4</button>
+    </div>
+    <button class="button-start" id="button-start" onclick="startRace()"">Começar Corrida</button><br>
+    
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
